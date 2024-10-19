@@ -16,8 +16,9 @@ class Solution:
                 freq[i]=1
                 self.recurPermute(nums,freq)
                 freq[i]=0
-                self.ds.pop(0)
-
+                self.ds.pop()
+            
+                
 
     def permute(self, nums: List[int]) -> List[List[int]]:
         self.ans=[]
