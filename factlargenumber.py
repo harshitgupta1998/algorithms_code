@@ -25,7 +25,7 @@ def multiply(x,res,res_size):
     # Iterative store the res and add carry
     while i<res_size:
         prod=res[i]*x+carry
-        res[i]=prod&10
+        res[i]=prod%10
         carry=prod//10
         i+=1
     # If the res_size is done and carry is still present
